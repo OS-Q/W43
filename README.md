@@ -22,34 +22,33 @@ W6字节输出平台，用于对外输出字节控制信息，包括电气输出
 
 ## [包含设备](https://github.com/OS-Q/W6/wiki) 
 
-#### D36：[波形输出](https://github.com/OS-Q/D29)
+#### D36：[性价比PWM](https://github.com/OS-Q/D36)
 
-通过波形输出数据信号
+性价比PWM对外输出
 
-#### D37：[PWM设备](https://github.com/OS-Q/D30)
+#### D37：[多通道PWM](https://github.com/OS-Q/D37)
 
-通过脉冲输出功率信号
+多通道PWM对外输出
 
-#### D38：[电压设备](https://github.com/OS-Q/D31)
+#### D38：[性价比DAC](https://github.com/OS-Q/D38)
 
-通过模拟输出电压
+高性价比电压输出
 
-#### D39：[电流输出](https://github.com/OS-Q/D32)
+#### D39：[多通道DAC](https://github.com/OS-Q/D39)
 
-板载控制电流输出
+多通道电压输出
 
-#### D40：[IIC驱动](https://github.com/OS-Q/D33)
+#### D40：[电流输出](https://github.com/OS-Q/D40)
 
-通过IIC控制非编程外设
+对外电流输出驱动
 
-#### D41：[SPI驱动](https://github.com/OS-Q/D34)
+#### D41：[IIC配置](https://github.com/OS-Q/D41)
 
-通过SPI控制非编程外设
+通过IIC配置相关器件
 
-#### D42：[NULL](https://github.com/OS-Q/D35)
+#### D42：[SPI配置](https://github.com/OS-Q/D42)
 
-
-
+通过SPI配置相关器件
 
 ## [同级平台](https://github.com/OS-Q/M2/wiki)
 
