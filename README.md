@@ -8,17 +8,16 @@
 
 ## [平台描述](https://github.com/OS-Q/W6/wiki) 
 
-W6字节输出平台，用于对外输出字节控制信息，包括电气输出和外设驱动
+W6字节输出平台，用于对外输出字节控制信息，包括直接的电气输出和外设驱动配置
 
-### [共用资源](https://github.com/OS-Q/W6/wiki) 
+### [共用资源](OS-Q/)
 
-#### [归一化层](OS-Q/)
-
-平台开发的归一化接口文件
 
 ---
 
-- 边缘设备统一命名规则：体系 Q:[1,4] -> 节点 M:[1,12] -> 平台 W:[1,52] -> 设备 D:[1,365]
+- 边缘设备命名规则：体系 Q:[1,4] -> 节点 M:[1,12] -> 平台 W:[1,52] -> 设备 D:[1,365]
+
+- naming patterns：system Q[1,4] -> node M[1,12] -> platform W[1,52] -> device D[1,365]
 
 ## [包含设备](https://github.com/OS-Q/W6/wiki) 
 
@@ -38,17 +37,17 @@ W6字节输出平台，用于对外输出字节控制信息，包括电气输出
 
 多通道电压输出
 
-#### D40：[电流输出](https://github.com/OS-Q/D40)
+#### D40：[串口配置](https://github.com/OS-Q/D40)
 
-对外电流输出驱动
+通过串口进行配置
 
 #### D41：[IIC配置](https://github.com/OS-Q/D41)
 
-通过IIC配置相关器件
+通过IIC进行配置
 
 #### D42：[SPI配置](https://github.com/OS-Q/D42)
 
-通过SPI配置相关器件
+通过SPI进行配置
 
 ## [同级平台](https://github.com/OS-Q/M2/wiki)
 
@@ -77,6 +76,4 @@ W6字节输出平台，用于对外输出字节控制信息，包括电气输出
 
 ####  © qitas@qitas.cn
 ###  [OS-Q redefined Operation System](http://www.OS-Q.com)
-####  @ 2018-12-11
-
----
+####  @ 2019-1-14
