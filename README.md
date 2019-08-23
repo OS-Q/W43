@@ -1,79 +1,37 @@
-﻿# W6：[字节输出](https://github.com/OS-Q/W6)
+﻿# [无线通信](https://github.com/OS-Q/W15)
 
 [![sites](OS-Q/OS-Q.png)](http://www.OS-Q.com)
 
-#### 归属数据输出：[M2](https://github.com/OS-Q/M2)
-
+#### 归属WiFi终端：[M4](https://github.com/OS-Q/M4)
+#### 关联解决方案：[S15](https://github.com/OS-Q/S15)
 #### 关于系统架构：[OS-Q](https://github.com/OS-Q/OS-Q)
 
-## [平台描述](https://github.com/OS-Q/W6/wiki) 
+[EDGE-Q](https://github.com/OS-Q/EDGE-Q) -> Q[4] -> M[12] -> W[52] -> D[365] -> H[24] -> S[60]
 
-W6字节输出平台，用于对外输出字节控制信息，包括直接的电气输出和外设驱动配置
+## [工程描述](https://github.com/OS-Q/W15/wiki)
 
-### [共用资源](OS-Q/)
+[无线通信](https://github.com/OS-Q/W15)归纳整理了数据处理相关的arduino库
 
+## [工程资源](https://github.com/OS-Q/W15)
 
----
+* [资源](src/)
+* [文档](docs/)
+* [工程](project/)
 
-- 边缘设备命名规则：体系 Q:[1,4] -> 节点 M:[1,12] -> 平台 W:[1,52] -> 设备 D:[1,365]
+### [拓扑结构](https://github.com/OS-Q/W15)
 
-- naming patterns：system Q[1,4] -> node M[1,12] -> platform W[1,52] -> device D[1,365]
+* M4：[WiFi终端](https://github.com/OS-Q/M4)
+	* W14：[数据获取](https://github.com/OS-Q/W14)
+	* W15：无线通信
+		* D99：[RFID](https://github.com/OS-Q/D99)
+		* D100：[IR](https://github.com/OS-Q/D100)
+		* D101：[subG](https://github.com/OS-Q/D101)
+		* D102：[LoRa](https://github.com/OS-Q/D102)
+		* D103：[2.4G](https://github.com/OS-Q/D103)
+		* D104：[mesh](https://github.com/OS-Q/D104)
+		* D105：[BLE](https://github.com/OS-Q/D105)
+	* W16：[显示交互](https://github.com/OS-Q/W16)
+	* W17：[数据存储](https://github.com/OS-Q/W17)
 
-## [包含设备](https://github.com/OS-Q/W6/wiki) 
-
-#### D36：[性价比PWM](https://github.com/OS-Q/D36)
-
-性价比PWM对外输出
-
-#### D37：[多通道PWM](https://github.com/OS-Q/D37)
-
-多通道PWM对外输出
-
-#### D38：[性价比DAC](https://github.com/OS-Q/D38)
-
-高性价比电压输出
-
-#### D39：[多通道DAC](https://github.com/OS-Q/D39)
-
-多通道电压输出
-
-#### D40：[串口配置](https://github.com/OS-Q/D40)
-
-通过串口进行配置
-
-#### D41：[IIC配置](https://github.com/OS-Q/D41)
-
-通过IIC进行配置
-
-#### D42：[SPI配置](https://github.com/OS-Q/D42)
-
-通过SPI进行配置
-
-## [同级平台](https://github.com/OS-Q/M2/wiki)
-
-#### W5：[比特输出](https://github.com/OS-Q/W5)
-
-比特逻辑输出，包括开关状态控制
-
-#### -> W6：[字节输出](https://github.com/OS-Q/W6)
-
-连续量输出，对外设器件数字输出
-
-#### W7：[显示输出](https://github.com/OS-Q/W7)
-
-连接显示设备，驱动显示相关信息
-
-#### W8：[文件输出](https://github.com/OS-Q/W8)
-
-具有时间或条件控制的数据流输出
-
-#### W9：[组合输出](https://github.com/OS-Q/W9)
-
-具有多种输出方式，各种组合控制
-
-
----
-
-####  © qitas@qitas.cn
-###  [OS-Q redefined Operation System](http://www.OS-Q.com)
-####  @ 2019-1-14
+### [OS-Q = Open Solutions | Open Source |  Operating System ](http://www.OS-Q.com/W15)
+####  2019-8-23
