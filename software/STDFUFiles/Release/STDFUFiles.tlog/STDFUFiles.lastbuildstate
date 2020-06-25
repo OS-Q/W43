@@ -1,2 +1,2 @@
-#TargetFrameworkVersion=v4.0:PlatformToolSet=v142:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit:WindowsTargetPlatformVersion=10.0
-Release|Win32|D:\My Workstation\Embedded\USB-Applications\WINAPP-DfuseDemo V3.0.6\Source1\|
+PlatformToolSet=v142:VCToolArchitecture=Native32Bit:VCToolsVersion=14.26.28801:TargetPlatformVersion=10.0.18362.0:
+Release|Win32|D:\OSQ\W42\software\|

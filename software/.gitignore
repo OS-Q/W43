@@ -1,6 +1,8 @@
 # Prerequisites
 *.d
-
+*.tlog
+*.txt
+*.log
 # Object files
 *.o
 *.ko
