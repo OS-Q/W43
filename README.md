@@ -13,8 +13,4 @@
 * [文档](docs/)
 * [工程](project/)
 
-### [相关硬件](https://github.com/SoCXin)
-
-* [STM32F103](https://github.com/SoCXin/STM32F103)
-
-### [OS-Q = Open Solutions | Open Source | Operating System ](http://www.OS-Q.com/W42)
+### [Q = (OpenSource & OperatingSystem) ](http://www.OS-Q.com)
