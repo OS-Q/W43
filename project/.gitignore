@@ -1,8 +1,13 @@
 # Prerequisites
 *.d
-*.uvgui.*
-JLinkSettings.ini
-
+*.txt
+*.scvd
+*.uvgui*
+*.uvopt*
+*.ini
+RTE
+*-EVAL
+DebugConfig
 # Object files
 *.o
 *.ko
