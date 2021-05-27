@@ -1,0 +1,31 @@
+name: src
+
+on:
+  push:
+    paths:
+      - 'src/**'
+      - '**.yml'
+
+jobs:
+  boot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: "recursive"
+          fetch-depth: 1
+
+      - name: make-action
+        uses: Qful/make-action@master
+        with:
+          release: '10-2020-q4'
+
+      - name: build bootloader
+        working-directory: src/bootloader
+        run: |
+          make all
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: bootloader
+          path: src/bootloader
