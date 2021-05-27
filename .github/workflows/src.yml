@@ -20,6 +20,11 @@ jobs:
         with:
           release: '10-2020-q4'
 
+      - name: build boot
+        working-directory: src/boot
+        run: |
+          make TARGET_HEADER="\<stm32f042x6.h\>" SERIES=STM32F0 APP_ADDRESS=0x08002000 APP_SIZE=24568 TOTAL_ERASE_MS=480 VID=FFFF PID=FFFF
+
       - name: build bootloader
         working-directory: src/bootloader
         run: |

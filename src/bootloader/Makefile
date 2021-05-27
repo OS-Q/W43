@@ -3,6 +3,14 @@ CC = $(CROSS_COMPILE)gcc
 OBJCOPY = $(CROSS_COMPILE)objcopy
 GIT_VERSION := $(shell git describe --abbrev=8 --dirty --always --tags)
 
+# CC = arm-none-eabi-gcc
+# AS = arm-none-eabi-as
+# AR = arm-none-eabi-ar
+# LD = arm-none-eabi-ld
+# OBJCOPY = arm-none-eabi-objcopy
+# SIZE = arm-none-eabi-size
+# OBJDUMP = arm-none-eabi-objdump
+
 # Config bits
 BOOTLOADER_SIZE = 4
 FLASH_SIZE = 128
