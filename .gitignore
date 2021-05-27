@@ -47,15 +47,15 @@ LICENSE*
 *.htm*
 .travis.yml
 doc
-docs
+# docs
 tests
 *.mk
-*.md
+# *.md
 Doxyfile
 **/*/README*
 *.so
 *.dcm
-*.yml
+# *.yml
 # *32f100*
 # *32f101*
 # *32f102*
