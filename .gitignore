@@ -40,7 +40,7 @@ LICENSE*
 *cm1*
 # *cm0*
 *.uvgu*
-.gitmodules
+# .gitmodules
 *.png
 *.jpg
 *.rst
