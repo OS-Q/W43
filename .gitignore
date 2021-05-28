@@ -49,7 +49,7 @@ LICENSE*
 doc
 # docs
 tests
-*.mk
+# *.mk
 # *.md
 Doxyfile
 **/*/README*
