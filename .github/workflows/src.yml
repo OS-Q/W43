@@ -34,3 +34,30 @@ jobs:
         with:
           name: bootloader
           path: src/bootloader
+
+  dap:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: "recursive"
+          fetch-depth: 1
+
+      - name: make-action
+        uses: Qful/make-action@master
+        with:
+          release: '10-2020-q4'
+
+      - name: build dap
+        working-directory: src/dap
+        run: |
+          chmod +x libopencm3/scripts/irq2nvic_h
+          chmod +x libopencm3/scripts/lpcvtcksum
+          chmod +x libopencm3/scripts/gendoxylist
+          chmod +x libopencm3/scripts/genlinktest.sh
+          make -f release.Makefile -k all
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: dap
+          path: src/dap/build
