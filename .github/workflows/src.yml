@@ -25,15 +25,15 @@ jobs:
         run: |
           make TARGET_HEADER="\<stm32f042x6.h\>" SERIES=STM32F0 APP_ADDRESS=0x08002000 APP_SIZE=24568 TOTAL_ERASE_MS=480 VID=FFFF PID=FFFF
 
-      - name: build bootloader
-        working-directory: src/bootloader
-        run: |
-          make all
+      # - name: build bootloader
+      #   working-directory: src/bootloader
+      #   run: |
+      #     make all
 
-      - uses: actions/upload-artifact@v2
-        with:
-          name: bootloader
-          path: src/bootloader
+      # - uses: actions/upload-artifact@v2
+      #   with:
+      #     name: bootloader
+      #     path: src/bootloader
 
   dap:
     runs-on: ubuntu-latest
@@ -51,10 +51,11 @@ jobs:
       - name: build dap
         working-directory: src/dap
         run: |
-          chmod +x libopencm3/scripts/irq2nvic_h
-          chmod +x libopencm3/scripts/lpcvtcksum
-          chmod +x libopencm3/scripts/gendoxylist
-          chmod +x libopencm3/scripts/genlinktest.sh
+          git submodule sync && git submodule update --init
+          # chmod +x libopencm3/scripts/irq2nvic_h
+          # chmod +x libopencm3/scripts/lpcvtcksum
+          # chmod +x libopencm3/scripts/gendoxylist
+          # chmod +x libopencm3/scripts/genlinktest.sh
           make -f release.Makefile -k all
 
       - uses: actions/upload-artifact@v2

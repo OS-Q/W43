@@ -1,3 +1,0 @@
-[submodule "src/dap/libopencm3"]
-	path = src/dap/libopencm3
-	url = https://github.com/devanlai/libopencm3.git
